@@ -64,8 +64,10 @@ const TheGame = () => {
   };
 
   const swapPLayer = () => {
+		
     currentPlayer == "X" ? (currentPlayer = "O") : (currentPlayer = "X");
   };
+	
 
   const clickHandler = (e) => {
     board[e.target.id] = currentPlayer;
